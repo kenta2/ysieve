@@ -719,8 +719,9 @@ int check_input(uint64_t highlimit, uint64_t lowlimit, uint32_t num_sp, uint32_t
                 sdata->pboundi, sieve_p[sdata->pboundi - 1]);
         }
 #endif
-
-		sdata->offset = offset;
+		fprintf(stderr,"ERROR: e5d28e37-aa8f-40d4-a435-c2feebd98d52 next line has compilation error, so aborting. (assignment to '__mpz_struct (*)[1]' from incompatible pointer type '__mpz_struct *')\n");
+		exit(1);
+		//sdata->offset = offset;
 		sdata->sieve_range = 1;
 	}
 
